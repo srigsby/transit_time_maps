@@ -1,0 +1,30 @@
+data layer
+import geoJSON data
+
+layer on top of map
+visual representation
+mouse over number pop up -- colored with data info
+
+coloring and borders from different sources
+
+https://developers.google.com/maps/documentation/javascript/datalayer
+Add_Event_Handlers - allow you to display maybe what that particular shade represents
+add shapes - to create our areas of various travel distance
+
+// Set mouseover event for each feature.
+map.data.addListener('mouseover', function(event) {
+  document.getElementById('info-box').textContent =
+      event.feature.getProperty('letter');
+});
+
+^^^^ display
+
+..... data aquisition.. storage(later)
+
+given starting poing return map displaying transit times
+
+take starting point and edges of map.
+sample throughout map region and store the times,distances of each destination sampled
+
+create a topolographical map from that data
+
